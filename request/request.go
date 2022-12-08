@@ -2,17 +2,16 @@
 package request
 
 type RegisterRequest struct{
-	ID			string 
-	Password  	string
-	Email		string
-	Birthday  	string
-	Post		string
+	UserID			uint64 `json:"userid"`
+	Password  	string `json:"password"`
+	Email		string `json:"Email"`
+	Birthday  	string `json:"Birthday"`
 }
 
 type LoginRequest struct{
-	ID		string
-	IP		string
-	Token	string
+	ID		string `json:"UserID"`
+	IP		string `json:"ip"`
+	Token	string `json:"token"`
 }
 
 type PostRequest struct{

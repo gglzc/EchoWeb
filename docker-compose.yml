@@ -1,6 +1,30 @@
 version: '3.7'
+services:
+  db:
+    container_name: postgres_container
+    image: postgres:latest
+    restart: always
+    environment:
+        POSTGRES_DB: postgres
+        POSTGRES_USER: admin
+        POSTGRES_PASSWORD: test
+    ports:
+      - "5432:5432"
 
-postgresdb:
-    image: postgres@latest
-    
-    
+    volumes:
+      - postgres-db:/Users/laishengqi/volumes/postgresql
+
+
+  redis:
+    container_name: redis_container
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379"
+    volumes:
+      - redis-vol:/Users/laishengqi/volumes/redis
+
+
+volumes:
+  postgres-db:
+  redis-vol:

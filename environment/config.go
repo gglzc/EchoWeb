@@ -1,15 +1,15 @@
 package environment
 
-import(
-	"github.com/spf13/viper"
-)
 
 type Config struct{
 	Port	string
+	DSN     string
 }
 
-func init(){
-	Instance:=viper.GetViper()
-	Instance.SetConfigType("yaml")
-	
+type DB struct{
+	DBUser 		string
+	DBPassword	string
+	DBHost		string
+
 }
+
