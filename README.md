@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EchoWeb
 ## 使用的工具
 * Gorm
@@ -15,3 +16,12 @@
  * k8s 
  
 
+=======
+## EchoWeb
+# folder structure
+echoWeb
+------
+--
+--
+-
+>>>>>>> 5971af5 (improve whole structure)

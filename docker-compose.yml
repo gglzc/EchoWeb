@@ -1,5 +1,6 @@
 version: '3.7'
 services:
+<<<<<<< HEAD
   db:
     container_name: postgres_container
     image: postgres:latest
@@ -28,3 +29,21 @@ services:
 volumes:
   postgres-db:
   redis-vol:
+=======
+    mysqldb:
+        container_name: mysqldb
+        restart: always
+        image: mysql:8.0.31
+        environment: 
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: test
+        ports: 
+        -  "5432:5432"
+
+    redis:
+        container_name: redisdb
+        image: redis:7.0.5-alpine
+
+
+    
+>>>>>>> 5971af5 (improve whole structure)

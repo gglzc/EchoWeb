@@ -1,7 +1,12 @@
 package main
+<<<<<<< HEAD
 
 import (
 	"github.com/gglzc/echoWeb/controller"
+=======
+import ("github.com/swaggo/echo-swagger" )
+func main(){
+>>>>>>> 5971af5 (improve whole structure)
 	
 	"fmt"
 	"github.com/spf13/viper"
