@@ -17,5 +17,5 @@ func init(){
 }
 
 func CheckUserExits(username string){
-	err:=RedisInstance.Set(ctx context.Context,"username",1,0)
+	err:=RedisInstance.Set(ctx ,"username",1,0)
 }
